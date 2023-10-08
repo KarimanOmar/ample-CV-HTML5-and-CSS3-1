@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./Thanks.html">
+        <fieldset>
+            <legend> User Information </legend><br>
+            <label for="firstname">First Name</label><br>
+            <input required type="text" name="firstname" id="firstname" title="first name" placeholder="enter yor first name" pattern="^[a-zA-z]{3,}$">
+            <br>
+            <label for="firstname">Last Name</label><br>
+            <input required type="text" name="lastname" id="lastname" title="last name" placeholder="enter yor last name" pattern="^[a-zA-z]{3,}$">
+            <br>
+            <label for="email">Enter Your Email</label><br>
+            <input required type="email" name="email" id="email" title="enter yor email" placeholder="enter yor email" pattern="^[a-zA-z0-9]{3,}@[a-z0-9]{3,}(.com)$">
+            <br>
+            <label for="password">Enter Your password</label><br>
+            <input required type="password" name="password" id="password" title="enter yor password" placeholder="enter yor password" size="20" maxlength="10" minlength="8">
+            <br>
+            <label for="age">Enter Your Age</label><br>
+            <input  type="number" name="age" id="age" title="enter yor age"  min="12" max="60" >
+            <br>
+            <label for="time">Enter time</label><br>
+            <input  type="time" name="time" id="time" title="enter time">
+            <br>
+            <label for="date">Enter date</label><br>
+            <input  type="date" name="date" id="date" title="enter date">
+            <br>
+            <label for="datetime">Enter date and time</label><br>
+            <input  type="datetime-local" name="datetime" id="datetime" title="enter date and time">
+            <br>
+            <label for="search">Enter what do you want for search</label><br>
+            <input  type="search" name="search" id="search" title="enter what do you want for search">
+            <br>
+            <label for="range">Enter range</label><br>
+            <input  type="range" name="range" id="range" title="enter range" max="100" step="5">
+            <br>
+            <label for="color">Enter color</label><br>
+            <input  type="color" name="color" id="color" title="enter color" >
+            <br>
+            <label for="file">Enter files</label><br>
+            <input  type="file" name="file" id="file" title="enter files" multiple>
+            <br>
+            <label for="city">Enter yor city</label><br>
+            <input  type="text" name="city" id="city" title="enter yor city" list="usercity">
+            <datalist id="usercity">
+                <option value="cairo"></option>
+                <option value="Alex"></option>
+                <option value="Sohag"></option>
+            </datalist>
+            <br>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
